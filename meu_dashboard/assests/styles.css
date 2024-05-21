@@ -1,0 +1,20 @@
+body,
+input,
+textarea,
+select,
+button {
+    font: 400 1rem "Catamaran", sans-serif;
+}
+.icon{
+    width: 40px;
+    height: 40px;
+}
+.dark {
+    background-color: #3f3f3f;
+}
+.dark header{
+    background-color: #3f3f3f;
+}
+.dark p {
+    color: #78A244;
+}

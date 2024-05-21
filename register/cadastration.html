@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens/23.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assests/input.css">
+    <link rel="stylesheet" href="./assests/structuration.css">
+    <title>cadastro</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <div><img src="../imagens/logo.jpeg" alt="logo" class="logo"></div>
+            <div class="animation">
+                <div>
+                    <form name="loginForm" class="structure">
+                        <label for="nome">
+                            <input type="text"  id="nome" placeholder=" " required>
+                            <p>Nome</p>
+                        </label>
+                        <label for="idade">
+                            <input type="number"  id="idade" placeholder=" " required>
+                            <p>Idade</p>
+                        </label>
+                        <label for="cpf">
+                            <input type="text"  id="cpf" placeholder=" " required>
+                            <p>CPF</p>
+                        </label>
+                        <label for="cep">
+                            <input type="text"  id="cep" placeholder=" " required>
+                            <p>CEP</p>
+                        </label>
+                        <label for="email">
+                            <input type="text" id="email"  placeholder=" " required>
+                            <p>Email</p>
+                        </label>
+                        <label for="senha">
+                            <input type="password" id="senha"  placeholder=" " required>
+                            <p>Senha</p>
+                        </label>
+                        <label for="confirmarSenha">
+                            <input type="password"  id="confirmarSenha" placeholder=" " required>
+                            <p>Confirme sua senha</p>
+                        </label>
+                        <div class="wrapper-input"></div>
+                        <button type="submit" class="btn" id="btn-submit" onclick="teste()">Entrar</button>
+                </div>
+                </form>
+
+                <div class="footer">
+                    <div class="hStack">
+                        <div>
+                            <p>Já tem conta?<a href="../login/login.html">Log in</a></p>
+                        </div>
+                        <div>
+                            <p>
+                                propriedade &#169; Todos os direitos reservados
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="background-img">
+            <div class="overlay"></div>
+        </div>
+    </div>
+
+    <script src="./js/verification.js"></script>
+</body>
+
+</html>

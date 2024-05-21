@@ -1,0 +1,116 @@
+#menu {
+  z-index: 2;
+
+}
+
+#menu-bar {
+  width: 45px;
+  height: 40px;
+  margin: 30px 0 20px 20px;
+  cursor: pointer;
+}
+
+.bar {
+  height: 5px;
+  width: 100%;
+  background-color: #78A244;
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+#bar1 {
+  transform: translateY(-4px);
+}
+
+#bar3 {
+  transform: translateY(4px);
+}
+
+aside {
+  position: absolute;
+  height: calc(100vh - 10vh);
+  background: #78A244;
+  transition: 0.4s ;
+  left: -200%;
+}
+
+.nav {
+  padding: 30px;
+
+}
+
+.nav ul {
+  padding: 0 22px;
+}
+
+.nav li {
+  list-style: none;
+  padding: 12px 20px;
+
+  transition: background-color .5s;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.nav li+li {
+  margin-top: 1
+}
+
+.nav li:hover {
+  background:  rgb(117, 118, 120, .6);
+
+}
+
+
+.nav li a {
+  color: #000000;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.nav li a:hover {
+  font-weight: bold;
+}
+
+.menu-bg,
+#menu {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.menu-bg {
+  z-index: 1;
+  width: 0;
+  height: 0;
+  margin: 30px 0 20px 20px;
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+
+.change {
+  left: 0;
+}
+
+.change .bar {
+  background-color: rgb(117, 118, 120);
+}
+
+.change #bar1 {
+  transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar2 {
+  opacity: 0;
+}
+
+.change #bar3 {
+  transform: translateY(-6px) rotateZ(45deg);
+}
+
+.change-bg {
+  width: 520px;
+  height: 460px;
+  transform: translate(-60%, -30%);
+}

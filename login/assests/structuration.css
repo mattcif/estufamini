@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+    font-family: Catamaran;
+}
+body,
+input,
+textarea,
+select,
+button {
+    font: 400 1rem "Catamaran", sans-serif;
+}
+
+.logo{
+    width: 360px;
+}
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: stretch;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 700px;
+
+}
+
+.animation {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
+.animation form {
+    margin: 0;
+    width: 340px;
+    text-align: center;
+}
+
+.background-img {
+    flex: 1;
+    background: url("../../imagens/background-register.jpg") no-repeat  center;
+    background-size: cover;
+    transition: all ease .5s;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    background: #00000050;
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper-input {
+    margin-top: 20px;
+}
+
+.btn {
+    width: 100%;
+    border-radius: 100px;
+    padding: 10px 2px;
+    font-size: 1.2rem;
+    background: #000000;
+    color: #ffffff;
+    border: 1px solid transparent;
+    font-weight: lighter;
+}
+.btn:hover{
+    border: 1px solid black;
+    color: #78A244;
+    background: #78A24400;
+    transition: all ease .2s;
+    cursor:pointer;
+}
+
+.footer {
+    margin-top: 30px;
+}
+a{
+    color: #000000;
+}
+.hStack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: larger;
+}
+
+.structure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}

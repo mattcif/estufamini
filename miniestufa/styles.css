@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #78A244;
+  --padding: 24px 32px;
+}
+
+::selection {
+  background: var(--primary-color);
+  color: #FFF;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+}
+
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+input,
+textarea,
+select,
+button {
+  font: 400 1rem "Catamaran", sans-serif;
+}
+
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media(max-width: 1080px) {
+  .section { 
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--padding);
+}
+
+header>img {
+  height: 80px;
+}
+
+.wrapper-menu-profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.wrapper-menu-profile .profile {
+  margin-left: 30px;
+}
+
+.wrapper-menu-profile .profile button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  opacity: 1;
+  transition: all ease .2s;
+}
+
+.wrapper-menu-profile .profile button:hover {
+  opacity: .5;
+}
+
+.wrapper-menu-profile .profile button img {
+  height: 50px;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.menu ul li {
+  list-style: none;
+}
+
+.menu ul li+li {
+  margin-left: 30px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  font-size: 1.875rem;
+  color: #000000;
+  font-weight: 300;
+}
+
+.menu ul li a:hover {
+  color: var(--primary-color);
+  transition: all ease .2s;
+}
+
+.menu ul li a.active {
+  color: var(--primary-color);
+  text-decoration:overline;
+}
+
+
+.section {
+  padding: var(--padding);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.section .section-text {
+  text-align: center;
+}
+
+.section .section-text ol {
+  text-align: initial;
+}
+.section .section-text ol li {
+  font-size: 2.188rem;
+  font-weight: 300;
+  max-width: 830px;
+  line-height: 42.36px;
+  text-align: left;
+  margin-top: 40px;
+}
+
+.section .section-text h3 {
+  font-weight: 300;
+  font-size: 2.188rem;
+}
+
+.section .section-text p {
+  font-size: 2.188rem;
+  font-weight: 300;
+  max-width: 730px;
+  line-height: 42.36px;
+  text-align: left;
+
+  margin-top: 30px;
+}
+
+.section .section-text a {
+  display: block;
+  padding: 33px 140px;
+  background: var(--primary-color);
+  border-radius: 50px;
+
+  font-size: 2.188rem;
+  font-weight: 300;
+  border: 3px solid var(--primary-color);
+  margin-top: 30px;
+
+  cursor: pointer;
+  transition: all ease .2s;
+}
+
+
+.section .section-text a:hover {
+  border: 3px solid var(--primary-color);
+
+  background-color: var(--primary-color)00;
+  color: var(--primary-color);
+}
+
+.section .section-image img {
+  height: 100vh;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  bottom: 0;
+  width: 100%;
+  height: 10vh;
+  border-top: 1px solid black;
+  background: black;
+  color: white;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 150px;
+}
+
+.property {
+  margin-left: 10px;
+}
+
+a {
+  color: white;
+  font-style: none;
+}
+
+a+a {
+  margin: 70px;
+}
+
+.whats,
+.insta {
+  width: 30px;
+}
+
+#product {
+  padding: var(--padding);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, auto));
+  gap: 35px;
+}
+
+#product .card {
+  background-color: #78A244CC;
+  padding: 65px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-radius: 51px;
+  justify-content: center;
+}
+#product .card p {
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+#product .card img {
+  width: 112px;
+}
+
+.dark{
+  background-color: #3f3f3f;
+  color: white;
+  .menu ul a{
+    color: white;
+  }
+  
+}

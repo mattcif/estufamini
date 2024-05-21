@@ -1,0 +1,76 @@
+::selection {
+    background: var(--primary-color);
+    color: #FFF;
+  }
+
+:root {
+    --primary-color: #78A244;
+    --padding: 24px 32px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--padding);
+  }
+  
+  header > img {
+    height: 80px;
+  }
+  
+  .wrapper-menu-profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .wrapper-menu-profile .profile {
+    margin-left: 30px;
+  }
+  
+  .wrapper-menu-profile .profile button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    opacity: 1;
+    transition: all ease .2s;
+  }
+  .wrapper-menu-profile .profile button:hover {
+    opacity: .5;
+  }
+  .wrapper-menu-profile .profile button img {
+    height: 50px;
+  }
+  
+  .menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .menu ul li {
+    list-style: none;
+  }
+  
+  li + li {
+    margin-left: 30px;
+  }
+  
+  .menu ul li a {
+    text-decoration: none;
+    font-size: 1.875rem;
+    color: #000000;
+    font-weight: 300;
+  }
+  
+  .menu ul li a:hover {
+    color:var(--primary-color);
+    transition: all ease .2s;
+  }
+  
+  .menu ul li a.active {
+    color: var(--primary-color);
+    text-decoration:overline;
+  }

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens/23.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assests/structure_header.css">
+    <link rel="stylesheet" href="./assests/structure.css">
+    <link rel="stylesheet" href="./assests/styles.css">
+    <link rel="stylesheet" href="./assests/hamburguer.css">
+    <link rel="stylesheet" href="./assests/chart.css">
+    <link rel="stylesheet" href="./assests/structure_footer.css">
+    <link rel="stylesheet" href="./assests/responsive.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>dashboard</title>
+
+
+</head>
+
+<body>
+
+    <header>
+        <div class="space">
+            <div id="menu">
+                <div id="menu-bar" onclick="menuOnClick()">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
+                </div>
+            </div>
+            <div>
+                <img src="../imagens/logo-removebg-preview.png" alt="logo" class="logo">
+            </div>
+        </div>
+        <div class="profile">
+            <div><img src="../imagens/user-green.png" alt="icone profile" class="icon">
+            </div>
+            <p>ID</p>
+        </div>
+    </header>
+    <div class="container">
+        <aside class="nav" id="nav">
+            <nav>
+                <ul>
+                    <li><a href="#">Planta1</a></li>
+                    <li><a href="#">Planta2</a></li>
+                    <li><a href="#">Planta3</a></li>
+                    <li><a href="#">Planta4</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <div class="container1">
+            <div class="box1">
+                <div>
+                    <img src="../imagens/folha.png" alt="icone folha" class="icon">
+                </div>
+                <p>planta1</p>
+            </div>
+            <div class="box2">
+                <div id="grafico-container">
+                    <canvas id="grafico"></canvas>
+                  </div>
+            </div>
+        </div>
+
+        <div class="container2">
+            <div class="datas">
+                <div class="data">
+                    <div>
+                        <img src="../imagens/gotas.png" alt="icone umidade" class="icon">
+                    </div>
+                    <div class="value">
+                        <p>55%</p>
+                    </div>
+                </div>
+                <div class="data">
+                    <div>
+                        <img src="../imagens/lampada.png" alt="icone luz" class="icon">
+                    </div>
+                    <div class="value">
+                        <p>13000 lux</p>
+                    </div>
+                </div>
+                <div class="data">
+                    <div>
+                        <img src="../imagens/ph.png" alt="icone ph" class="icon">
+                    </div>
+                    <div class="value">
+                        <p>7 pH</p>
+                    </div>
+                </div>
+            </div>
+            <div class="datas">
+                <div class="data">
+                    <div>
+                        <img src="../imagens/termometro.png" alt="icone temperatura" class="icon">
+                    </div>
+                    <div class="value">
+                        <p>25°</p>
+                    </div>
+                </div>
+                <div class="data">
+                    <div>
+                        <img src="../imagens/ventoinha.png" alt="icone ventilação" class="icon">
+                    </div>
+                    <div class="value">
+                        <p type>0.864 m³/h</p>
+                    </div>
+                </div>
+                <div class="data">
+                    <div>
+                        <img src="../imagens/planta_com-gotas.png" alt="icone irrigação" class="icon">
+                    </div>
+                    <div class="value">
+                        <p>2x</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <img src="../imagens/logo-removebg-preview.png" alt="logo miniestufa" class="logo">
+            <p class="property">propriedade &#169; Todos os direitos reservados</p>
+        </div>
+        <div>
+            <a href="../imagens/litepaper.pdf">litepaper</a>
+            <a href="../imagens/whitepaper.pdf">whitepaper</a>
+            <button onclick="funcao_mudaCor()">Altera Cor</button>
+        </div>
+        
+        <div>
+            <img src="../imagens/whats.avif" alt="logo whats " class="whats">
+            <img src="../imagens/instagram-icone-icon-1.png" alt="logo insta" class="insta">
+            <div>
+                <script src="../home/js/date.js"></script>
+            </div>
+            
+        </div>
+    </footer>
+    <script src="./js/hamburguer.js"></script>
+    <script src="./js/chart.js"></script>
+    <script src="../home/js/darkmode.js"></script>
+</body>
+
+</html>
+
+
+
+
+

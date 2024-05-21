@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+input,
+textarea,
+select,
+button {
+    font: 400 1rem "Catamaran", sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.dark {
+    background-color: #3f3f3f;
+
+    .menu ul a {
+        color: white;
+    }
+    .contact{
+        background-color: #3f3f3f;
+    }
+    .contact h2{
+        color: white;
+    }
+    .contact label input{
+        background-color: #3f3f3f;
+    }
+    .contact label input:focus + p{
+        background-color: #3f3f3f;
+    }
+    #banner h1{
+        color: white;
+    }
+
+}
+

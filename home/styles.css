@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #78A244;
+  --padding: 24px 32px;
+}
+
+::selection {
+  background: var(--primary-color);
+  color: #FFF;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+input,
+textarea,
+select,
+button {
+    font: 400 1rem "Catamaran", sans-serif;
+}
+
+
+@media (max-width: 1080px) {
+  html {
+      font-size: 93.75%;
+  }
+
+}
+
+@media (max-width: 720px) {
+  html {
+      font-size: 87.5%;
+  }
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--padding);
+}
+
+header > img {
+  height: 80px;
+}
+
+.wrapper-menu-profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.wrapper-menu-profile .profile {
+  margin-left: 30px;
+}
+
+.wrapper-menu-profile .profile button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  opacity: 1;
+  transition: all ease .2s;
+}
+.wrapper-menu-profile .profile button:hover {
+  opacity: .5;
+  
+}
+.wrapper-menu-profile .profile button img {
+  height: 50px;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.menu ul li {
+  list-style: none;
+}
+
+li + li {
+  margin-left: 30px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  font-size: 1.875rem;
+  color: #000000;
+  font-weight: 300;
+}
+
+.menu ul li a:hover {
+  color:var(--primary-color);
+  transition: all ease .2s;
+}
+
+.menu ul li a.active {
+  color: var(--primary-color);
+  text-decoration:overline;
+}
+
+#banner {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 128px);
+
+  background-image: url(../imagens/img_topo.png);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #00000070;
+}
+
+#banner  h1 {
+  font-size: 80px;
+  color: #ffffff;
+  font-weight: 300;
+  z-index: 2;
+}
+
+#banner  h1  span {
+  color: var(--primary-color);
+  
+}
+
+#banner a {
+  margin-top: 30px;
+  padding: 28px 52px;
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 2.188rem;
+  font-weight: 300;
+
+  background-color: transparent;
+  border:3px solid var(--primary-color);
+  z-index: 2;
+
+  transition: all ease .2s;
+  cursor: pointer;
+}
+
+#banner a:hover {
+  background: var(--primary-color);
+  color: #ffffff;
+}
+
+.section {
+  padding: var(--padding);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.section .section-text {
+  text-align: center;
+ 
+}
+
+.section .section-text h3  {
+  font-weight: 300;
+  font-size: 2.188rem;
+}
+
+.section .section-text p {
+  font-size: 2.188rem;
+  font-weight: 300;
+  max-width: 730px;
+  line-height: 42.36px;
+  text-align: left;
+
+  margin-top: 30px;
+}
+
+.section .section-text a { 
+  text-decoration: none;
+  display: block;
+  padding: 33px 140px;
+  background: var(--primary-color);
+  border-radius: 50px;
+
+  font-size: 2.188rem;
+  font-weight: 300;
+  border: 3px solid var(--primary-color);
+  margin-top: 30px;
+
+  cursor: pointer;
+  transition: all ease .2s;
+}
+
+
+.section .section-text a:hover {
+  border: 3px solid var(--primary-color);
+
+  background-color: var(--primary-color)00;
+  color: var(--primary-color);
+}
+
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  bottom: 0;
+  width: 100%;
+  height: 10vh;
+  border-top: 1px solid black;
+  background: black;
+  color: white;
+  box-sizing: border-box;
+  .logo{
+      width: 150px;
+  }
+  .property{
+      margin-left: 10px;
+  }
+  
+}
+a{
+  color: white;
+  font-style: none;
+}
+a+a{
+  margin: 70px;
+} 
+.whats, .insta{
+  width: 30px;
+}
+#image1 {
+  width: 70%;
+  height: 300px;
+  position: relative;
+  margin-left: 15%;
+}
+
+.slideshow{
+  padding: 10px;
+  background: #3f3f3f;
+}
+
+.dark{
+  background-color: #3f3f3f;
+  color: white;
+  .menu ul a{
+    color: white;
+  }
+  .slideshow{
+    padding: 10px;
+    background: #504f4f;
+  }
+}
